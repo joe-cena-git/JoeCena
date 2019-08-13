@@ -8,8 +8,8 @@ namespace DomainSite.Models
     public class BlogPost
     {
         private Category Category;
+        private TitleFull TitleFull;
         private TitleShort TitleShort;
-        private TitleLong TitleLong;
         private DateTime DateCreated;
         private DateTime DateLastModified;
         private DateTime DatePublished;
@@ -18,6 +18,26 @@ namespace DomainSite.Models
         private SummaryLong SummaryLong;
         private Body Body;
 
+        public BlogPost(Category Category)
+        {
+
+        }
+    }
+
+    public enum Category
+    {
+        World,
+        US,
+        Technology,
+        Design,
+        Culture,
+        Business,
+        Politics,
+        Opinion,
+        Science,
+        Health,
+        Style,
+        Travel
     }
 
     internal class TitleShort
@@ -46,19 +66,19 @@ namespace DomainSite.Models
         }
     }
 
-    internal class TitleLong
+    internal class TitleFull
     {
         private readonly string Text;
 
-        protected TitleLong(string text)
+        protected TitleFull(string text)
         {
             if (text == null)
             {
-                throw new IndexOutOfRangeException("TitleLong expects a non-null string, input was null.");
+                throw new IndexOutOfRangeException("TitleFull expects a non-null string, input was null.");
             }
             else if (text.Length < 1 || text.Length > 50)
             {
-                throw new IndexOutOfRangeException("TitleLong expects a string between 1 and 50 characters. Input was '" + text + "' (" + text.Length + " chars).");
+                throw new IndexOutOfRangeException("TitleFull expects a string between 1 and 50 characters. Input was '" + text + "' (" + text.Length + " chars).");
             }
             else
             {
