@@ -10,6 +10,10 @@ namespace DomainSite.Controllers
     {
         public ActionResult Index()
         {
+            var BlogPosts = new List<Models.BlogPost>();
+
+
+
             return View();
         }
     }
