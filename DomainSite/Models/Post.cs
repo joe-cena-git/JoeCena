@@ -5,7 +5,7 @@ using System.Web;
 
 namespace DomainSite.Models
 {
-    public class BlogPost
+    public class Post
     {
         public Category Category { get; set; }
         public bool IsFeatured { get; set; }
