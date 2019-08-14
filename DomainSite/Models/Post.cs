@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomainSite.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -19,21 +20,5 @@ namespace DomainSite.Models
         public string SummaryShort { get; set; }
         public string SummaryLong { get; set; }
         public string Body { get; set; }
-    }
-
-    public enum Category
-    {
-        World,
-        US,
-        Technology,
-        Design,
-        Culture,
-        Business,
-        Politics,
-        Opinion,
-        Science,
-        Health,
-        Style,
-        Travel
     }
 }

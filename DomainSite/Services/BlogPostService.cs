@@ -1,4 +1,5 @@
-﻿using DomainSite.Models;
+﻿using DomainSite.Enums;
+using DomainSite.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace DomainSite.Services
                 {
                     new Post()
                     {
-                        Category = Category.Technology,
+                        Category = Category.TECH,
                         IsFeatured = true,
                         AuthorName = "Joe Cenatiempo",
                         AuthorEmail = "joecenatiempo@gmail.com",
@@ -28,38 +29,38 @@ namespace DomainSite.Services
                         DateCreated = new DateTime(2019, 8, 13, 20, 0, 0),
                         DateLastModified = new DateTime(2019, 8, 13, 20, 0, 0),
                         DatePublished = new DateTime(2019, 8, 13, 20, 0, 0),
-                        SummaryShort = "Site documentation",
-                        SummaryLong = "Site documentation for the Domain Site Web Application",
-                        Body = "Hello and welcome to the site documentation. This is the body of the site REAME, the very first article published in your Web Domain Application."
+                        SummaryShort = "TECH documentation",
+                        SummaryLong = "TECH documentation for the Domain Site Web Application",
+                        Body = "Hello and welcome to the TECH documentation. This is the body of the site TECH, the very first article published in your Web Domain Application."
                     },
                     new Post()
                     {
-                        Category = Category.Health,
+                        Category = Category.SITE,
                         IsFeatured = true,
                         AuthorName = "Joe Cenatiempo",
                         AuthorEmail = "joecenatiempo@gmail.com",
-                        TitleFull = "Health Article",
-                        TitleShort = "Health Article",
+                        TitleFull = "SITE Article",
+                        TitleShort = "SITE Article",
                         DateCreated = new DateTime(2019, 8, 13, 20, 0, 1),
                         DateLastModified = new DateTime(2019, 8, 13, 20, 0, 1),
                         DatePublished = new DateTime(2019, 8, 13, 20, 0, 1),
-                        SummaryShort = "A sample health article",
-                        SummaryLong = "A sample health article published to the Domain Site Web Application",
-                        Body = "This is some body content in the sample health article. Health is important and computers are terrible for it."
+                        SummaryShort = "A sample SITE article",
+                        SummaryLong = "A sample SITE article published to the Domain Site Web Application",
+                        Body = "This is some body content in the sample health article. SITE is important and computers are terrible for it."
                     },
                     new Post()
                     {
-                        Category = Category.Technology,
+                        Category = Category.GAMES,
                         IsFeatured = false,
                         AuthorName = "Joe Cenatiempo",
                         AuthorEmail = "joecenatiempo@gmail.com",
-                        TitleFull = "Tech Article",
-                        TitleShort = "Tech Article",
+                        TitleFull = "Games Article",
+                        TitleShort = "Games Article",
                         DateCreated = new DateTime(2019, 8, 13, 20, 0, 2),
                         DateLastModified = new DateTime(2019, 8, 13, 20, 0, 2),
                         DatePublished = new DateTime(2019, 8, 13, 20, 0, 2),
-                        SummaryShort = "A sample tech article",
-                        SummaryLong = "A sample tech article published to the Domain Site Web Application",
+                        SummaryShort = "A sample Games article",
+                        SummaryLong = "A sample Games article published to the Domain Site Web Application",
                         Body = @"<p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
                                 <hr>
                                 <p>Cum sociis natoque penatibus et magnis, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
