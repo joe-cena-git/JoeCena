@@ -7,10 +7,10 @@ namespace DomainSite.Enums
 {
     public enum Category
     {
-        SITE,
-        TECH,
-        CSHARP,
-        JAVASCRIPT,
+        Site,
+        Tech,
+        CSharp,
+        JavaScript,
         HTML,
         CSS,
         GAMES,
