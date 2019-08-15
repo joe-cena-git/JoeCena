@@ -1,1 +1,26 @@
-﻿
+﻿h3 {
+    font-size: 18px;
+}
+
+.shake {
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    display: block;
+    height: auto;
+    text-align: center;
+    text-shadow: 0px 1px 1px #fff;
+    -webkit-animation: shake 1s ease-in-out 0.1s infinite alternate;
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(5deg);
+    }
+
+    to {
+        -webkit-transform-origin: center center;
+        -webkit-transform: rotate(-5deg);
+    }
+}
