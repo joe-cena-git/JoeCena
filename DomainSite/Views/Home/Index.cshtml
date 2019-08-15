@@ -7,21 +7,6 @@
 </div>
 
 <div class="row mb-2">
-    <div class="col-md-6">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-success">Business</strong>
-                <h3 class="mb-0">About the Author</h3>
-                <div class="mb-1 text-muted">Aug 16 2019</div>
-                <p class="mb-auto">Visit my personal site to learn about my experiences building software for companies around the world.</p>
-                <a href="https://www.joecenatiempo.com" target="_blank" class="stretched-link">Continue reading</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-                @*<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-                <img class="bd-placeholder-img" width="200" height="250" src="~/Images/profile-site-thumb.PNG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
-            </div>
-        </div>
-    </div>
 
     <div class="col-md-6">
         <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -30,7 +15,7 @@
                 <h3 class="mb-0">Building the Site</h3>
                 <div class="mb-1 text-muted">Aug 15 2019</div>
                 <p class="card-text mb-auto">Take a look at how this site is built, join in on development, and learn more about the tech under the hood.</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a href="~/Home/About" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
                 @*<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
@@ -38,6 +23,26 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Business</strong>
+                <h3 class="mb-0">About the Author</h3>
+                <div class="mb-1 text-muted">Aug 16 2019</div>
+                <p class="mb-auto">Visit my personal site to learn about my experiences building software for companies around the world.</p>
+                <a href="https://www.joecenatiempo.com" target="_blank" class="stretched-link">Continue reading in new tab</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                @*<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                <img class="bd-placeholder-img" width="200" height="250" src="~/Images/profile-site-thumb.PNG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+            </div>
+        </div>
+    </div>
+
+
 
 </div>
 
@@ -55,11 +60,11 @@
 
         </div><!-- /.blog-post -->
 
-        <hr />
+        @*<hr />*@
 
-        <div class="blog-post">
+        @*<div class="blog-post">
             <h2 class="blog-post-title">Git 101</h2>
-            <p class="blog-post-meta">15 AUG 2019 @*by <a href="#">admin</a>*@</p>
+            <p class="blog-post-meta">15 AUG 2019 by <a href="#">admin</a></p>
             
             <p>
                 <h3>My Background in git</h3>
@@ -67,32 +72,11 @@
                 to use git technology in order to write and ship software and content more effectively.
             </p>
 
-        </div><!-- /.blog-post -->
+        </div>*@<!-- /.blog-post -->
 
 
     </div><!-- /.blog-main -->
-    <aside class="col-md-4 blog-sidebar">
-        <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="font-italic">About</h4>
-            <p class="mb-0">
-                This is my blog and custom website.
-                <br />
-                I write and maintain this web application, running on <a href="#">Bootstrap 4</a>, Microsoft's <a href="#">.NET Framework</a>, <a href="#">Azure Cloud</a>, and <a href="#">SQL Server.</a>
-                <br />
-                It's all open source and you can contribute by following the development links below.
-            </p>
-        </div>
-
-        <div class="p-4">
-            <h4 class="font-italic">Development</h4>
-            <ol class="list-unstyled">
-                <li>Commit: 4hn313</li>
-                <li>.NET Framework 4.7.2</li>
-                <li><a href="#">Site API</a></li>
-                <li><a href="https://bitbucket.org/Dinnertime/domainsite/src/master/" target="_blank">Source Code</a></li>
-                <li><a href="#">Issue Tracker</a></li>
-                <li><a href="#">Wiki</a></li>
-            </ol>
-        </div>
-    </aside><!-- /.blog-sidebar -->
+    @{
+        Html.RenderPartial("_FooterPartial");
+    }
 </div><!-- /.row -->
