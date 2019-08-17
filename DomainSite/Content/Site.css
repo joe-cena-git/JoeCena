@@ -8,6 +8,13 @@ h4 {
     font-size: 18px;
 }
 
+.article-image {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    border: solid 1px gray;
+}
+
 .code {
     background-color: #343a40;
     color: white;

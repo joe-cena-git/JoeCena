@@ -201,6 +201,8 @@
     <Content Include="Content\site.css" />
     <Content Include="Images\favicon.JPG" />
     <Content Include="Images\git-thumb.PNG" />
+    <Content Include="Images\git-tools-download-thumb.PNG" />
+    <Content Include="Images\git-tools-thumb.PNG" />
     <Content Include="Images\github-logo.png" />
     <Content Include="Images\github-settings-screenshot-arrow.png" />
     <Content Include="Images\github-settings-screenshot.png" />
@@ -297,8 +299,8 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
-    <Content Include="Views\Home\Git.cshtml" />
     <Content Include="Views\Home\Git2.cshtml" />
+    <Content Include="Views\Home\Git.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
