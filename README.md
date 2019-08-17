@@ -1,5 +1,6 @@
 # JoeCena
 My blog website, a custom .NET Web Application where I publish things I build or write about.
+[https://joecena.com](https://joecena.com)
 
 ## Purpose
 I want to write and share content around technology and some of my other interests.
