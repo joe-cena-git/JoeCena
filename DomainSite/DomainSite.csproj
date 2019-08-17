@@ -200,6 +200,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
     <Content Include="Images\favicon.JPG" />
+    <Content Include="Images\git-bash-here.png" />
+    <Content Include="Images\git-bash.PNG" />
     <Content Include="Images\git-thumb.PNG" />
     <Content Include="Images\git-tools-download-thumb.PNG" />
     <Content Include="Images\git-tools-thumb.PNG" />
