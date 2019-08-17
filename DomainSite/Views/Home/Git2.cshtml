@@ -1,0 +1,116 @@
+﻿<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic" style="width: 800px;">Git Setup Made Simple</h1>
+        <p class="lead my-3" style="width: 800px;">Get setup and moving with modern source control.</p>
+        <p class="blog-post-meta">Published Aug 15 2019 @*by <a href="#">admin*@</a></p>
+        @*<p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Learn more...</a></p>*@
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 blog-main">
+
+        <div class="blog-post">
+            @*<h2 class="blog-post-title">Steps</h2>*@
+
+            <h3>Step 1: Open a Git Bash Window</h3>
+            <p>
+                Open up a <b>git bash</b> terminal in any folder:
+                <ol>
+                    <li>Right click in any folder.</li>
+                    <li>Click "Git Bash Here"</li>
+                </ol>
+                If you can't see that option, you don't yet have <b>git bash</b> installed.<br />
+                You can download it at <a href="https://git-scm.com/downloads" target="_blank">git-scm.com/downloads</a>.
+            </p>
+
+            <hr />
+
+            <h3>Step 2: Generate an RSA 4096 SSH Key</h3>
+
+            <p>Run the command below in <b>git bash</b>:</p>
+
+            <p class="code">
+                ssh-keygen -o -t rsa -b 4096
+            </p>
+
+            <p>
+                You will receive the output:
+            </p>
+
+            <p class="code code-background-2">
+                Generating public/private rsa key pair.<br />
+                Enter file in which to save the key (/c/Users/<span class="code-style-1">your-username</span>/.ssh/id_rsa): _
+            </p>
+
+            <p>
+                Press <b>Enter</b> to use the default directory, shown in the parenthesis.<br />
+                Git and other apps will look for ssh keys in that folder by default.
+            </p>
+
+            <p>
+                You will receive this prompt:
+            </p>
+
+            <p class="code code-background-2">
+                Enter passphrase (empty for no passphrase): _
+            </p>
+
+            <p>
+                Enter a unique password you will remember.<br />
+                <b>Do NOT leave your password blank</b>--this would be like storing your password in a plain text file.<br />
+                All passwords are hidden in git bash while typing. Keep typing and press <b>Enter</b> to confirm.
+            </p>
+
+            <p>
+                You should see a successfully generated public key:
+            </p>
+
+            <p class="code code-background-2">
+                Your identification has been saved in /c/Users/<span class="code-style-1">your-username</span>/.ssh/id_rsa.<br />
+                Your public key has been saved in /c/Users/<span class="code-style-1">your-username</span>/.ssh/id_rsa.pub.<br />
+                The key fingerprint is:<br />
+                SHA256:zYJto2Pe6i7RBF8XP7vWMJiTvPT1ZJq7AZeOZhE9Do8 Joe@DESKTOP-M9J30VF<br />
+                The key's randomart image is:<br />
+                +---[RSA 4096]----+<br />
+                |.................|<br />
+                |.................|<br />
+                |.................|<br />
+                |......oo.+.+.O.o.|<br />
+                |.....o..S.X.E.*.o|<br />
+                |.......o.+.+.%.*.|<br />
+                |......+.... B.*..|<br />
+                |.....o o...+...o.|<br />
+                |.....+=.......o..|<br />
+                +----[SHA256]-----+
+
+            </p>
+
+            <hr />
+            <h3>Step 3: Copy Your Public Key to Clipboard</h3>
+
+            <p>
+                Use the following command to copy the contents of your public key file to your computer's clipboard:
+            </p>
+
+            <p class="code">
+                cat ~/.ssh/id_rsa.pub | clip
+            </p>
+
+            <p>
+                You can now paste your public key into GitHub, GitLabs, Bitbucket, etc.<br />
+                You can typically paste an SSH Key under <b>User Settings > SSH Keys</b>.
+            </p>
+        </div>
+    </div><!-- /.blog-main -->
+    @{
+        Html.RenderPartial("_FooterPartial");
+    }
+</div><!-- /.row -->
+
+@{
+    ViewBag.Title = "Git2";
+}
+
+<h2>Git2</h2>
+

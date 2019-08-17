@@ -23,5 +23,10 @@ namespace DomainSite.Controllers
         {
             return View();
         }
+
+        public ActionResult Git2()
+        {
+            return View();
+        }
     }
 }
