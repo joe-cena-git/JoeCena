@@ -1,5 +1,30 @@
 ﻿h3 {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4 {
     font-size: 18px;
+}
+
+.code {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    font-family: monospace;
+}
+
+.code-background-2 {
+    background-color: lightslategray;
+}
+
+.code-style-1 {
+    color: cyan;
+}
+
+.code-style-2 {
+    color: hotpink;
 }
 
 .shake {

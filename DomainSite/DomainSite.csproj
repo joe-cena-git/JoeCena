@@ -200,8 +200,17 @@
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
     <Content Include="Images\favicon.JPG" />
+    <Content Include="Images\git-thumb.PNG" />
+    <Content Include="Images\github-logo.png" />
+    <Content Include="Images\github-settings-screenshot-arrow.png" />
+    <Content Include="Images\github-settings-screenshot.png" />
+    <Content Include="Images\github-ssh-screenshot.png" />
     <Content Include="Images\image.PNG" />
     <Content Include="Images\profile-site-thumb.PNG" />
+    <Content Include="Images\Screenshots\august2019screenshot.PNG" />
+    <Content Include="Images\ssh-key-page-screenshot.png" />
+    <Content Include="Images\ssh-key-page.png" />
+    <Content Include="Images\ssh-key-screenshot.PNG" />
     <Content Include="Images\visual-studio-thumb.PNG" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -288,6 +297,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Views\Home\Git.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

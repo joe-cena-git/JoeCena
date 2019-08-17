@@ -18,5 +18,10 @@ namespace DomainSite.Controllers
         {
             return View();
         }
+
+        public ActionResult Git()
+        {
+            return View();
+        }
     }
 }
