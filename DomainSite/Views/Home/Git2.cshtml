@@ -1,11 +1,13 @@
-﻿<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-        <h1 class="font-italic">Git SSH Keys in 30 Seconds</h1>
-        <p class="lead">A quick guide to connection and authentication with SSH keys on Windows.</p>
-        <p class="blog-post-meta">Published Aug 16 2019 @*by <a href="#">admin*@</a></p>
-        @*<p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Learn more...</a></p>*@
-    </div>
-</div>
+﻿@{
+    var viewModel = new DomainSite.ViewModels.ArticleJumbotronVM()
+    {
+        Title = "Git SSH Keys in 30 Seconds",
+        SubTitle = "A quick guide to connection and authentication with SSH keys on Windows.",
+        PublishDate = new DateTime(2019, 8, 16)
+    };
+
+    Html.RenderPartial("_ArticleJumbotron", viewModel);
+}
 
 <div class="row">
     <div class="col-md-8 blog-main">

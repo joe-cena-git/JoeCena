@@ -1,11 +1,13 @@
-﻿<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-        <h1 class="font-italic">Git Setup Made Simple</h1>
-        <p class="lead">Get setup and moving with modern source control.</p>
-        <p class="blog-post-meta">Published Aug 17 2019 @*by <a href="#">admin*@</a></p>
-        @*<p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Learn more...</a></p>*@
-    </div>
-</div>
+﻿@{
+    var viewModel = new DomainSite.ViewModels.ArticleJumbotronVM()
+    {
+        Title = "Git Setup Made Simple",
+        SubTitle = "Get setup and running with modern source control.",
+        PublishDate = new DateTime(2019, 8, 17)
+    };
+
+    Html.RenderPartial("_ArticleJumbotron", viewModel);
+}
 
 <div class="row">
     <div class="col-md-8 blog-main">
@@ -56,14 +58,14 @@
             @*<hr />*@
 
             @*<h3>Keep Reading</h3>
-            <p>
-                <ol>
-                    <li><a href="#">Create A New Git Repo</a></li>
-                    <li><a href="#">Connect to A Remote Git Repo</a></li>
-                    <li><a href="#">Clone A Remote Git Repo</a></li>
-                    <li><a href="#">Git Commands</a></li>
-                </ol>
-            </p>*@
+                <p>
+                    <ol>
+                        <li><a href="#">Create A New Git Repo</a></li>
+                        <li><a href="#">Connect to A Remote Git Repo</a></li>
+                        <li><a href="#">Clone A Remote Git Repo</a></li>
+                        <li><a href="#">Git Commands</a></li>
+                    </ol>
+                </p>*@
 
         </div>
     </div><!-- /.blog-main -->
