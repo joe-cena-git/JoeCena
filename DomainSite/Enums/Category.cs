@@ -7,17 +7,21 @@ namespace DomainSite.Enums
 {
     public enum Category
     {
-        Site,
-        Tech,
-        CSharp,
-        JavaScript,
-        HTML,
-        CSS,
-        GAMES,
-        BUSINESS,
-        BOOKS,
-        VIDEOS,
-        APPS,
-        FILES,
+        GIT,
+        TECH,
+        SITE
+        
+        //Site,
+        //Tech,
+        //CSharp,
+        //JavaScript,
+        //HTML,
+        //CSS,
+        //GAMES,
+        //BUSINESS,
+        //BOOKS,
+        //VIDEOS,
+        //APPS,
+        //FILES,
     }
 }

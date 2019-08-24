@@ -18,6 +18,11 @@ namespace DomainSite
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Articles",
+                url: "Articles/{category}/{id}"
+            );
         }
     }
 }
